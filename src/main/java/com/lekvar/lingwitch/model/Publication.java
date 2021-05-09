@@ -11,7 +11,7 @@ public class Publication {
     private Date dateOfLastLecture;
     private boolean reviewed;
     private int popularity;
-    private Object language;
+    private String language;
     private int level;
     private String title;
     private String text;
@@ -59,11 +59,11 @@ public class Publication {
         this.popularity = popularity;
     }
 
-    public Object getLanguage() {
+    public String getLanguage() {
         return language;
     }
 
-    public void setLanguage(Object language) {
+    public void setLanguage(String language) {
         this.language = language;
     }
 

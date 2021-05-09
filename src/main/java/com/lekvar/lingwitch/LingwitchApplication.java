@@ -13,15 +13,4 @@ public class LingwitchApplication {
 		SpringApplication.run(LingwitchApplication.class, args);
 	}
 
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return new WebMvcConfigurer() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/publication").allowedOrigins("http://localhost:8080");
-			}
-		};
-	}
-
-
 }
